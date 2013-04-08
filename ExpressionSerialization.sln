@@ -1,40 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressionSerialization not-modified", "ExpressionSerialization not-modified", "{4B183DD6-77AD-4BDF-8C3E-D0499DF16DD6}"
-	ProjectSection(SolutionItems) = preProject
-		ExpressionTreeSerialization-not-modified\ExpressionSerialization\DLinqCustomExpressionXmlConverter.cs = ExpressionTreeSerialization-not-modified\ExpressionSerialization\DLinqCustomExpressionXmlConverter.cs
-		RemoteQueryService\RemoteTable.cs = RemoteQueryService\RemoteTable.cs
-	EndProjectSection
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionSerialization.SL", "ExpressionSerialization.SL\ExpressionSerialization.SL.csproj", "{1B9ABF10-2150-4D3D-B109-7AB4D4E1CC18}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbQueryProvider", "DbQueryProvider", "{52C67366-E19A-48CD-9B84-A2A1A197657B}"
-	ProjectSection(SolutionItems) = preProject
-		..\iqueryprovider\ObjectServices\DbQueryProvider\DbQueryProvider.cs = ..\iqueryprovider\ObjectServices\DbQueryProvider\DbQueryProvider.cs
-		..\iqueryprovider\ObjectServices\DbQueryProvider\ExpressionVisitor.cs = ..\iqueryprovider\ObjectServices\DbQueryProvider\ExpressionVisitor.cs
-		..\iqueryprovider\ObjectServices\DbQueryProvider\ObjectReader.cs = ..\iqueryprovider\ObjectServices\DbQueryProvider\ObjectReader.cs
-		..\iqueryprovider\ObjectServices\DbQueryProvider\QueryTranslator.cs = ..\iqueryprovider\ObjectServices\DbQueryProvider\QueryTranslator.cs
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionSerialization", "ExpressionSerialization\ExpressionSerialization.csproj", "{01ABE4DB-4ABE-4B0E-878B-B42A8C9B6560}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs12
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ExpressionSerialization.SL\\ExpressionSerialization.SL.csproj
-		SccProjectName1 = ExpressionSerialization.SL
-		SccLocalPath1 = ExpressionSerialization.SL
-		SccProjectUniqueName2 = ExpressionSerialization\\ExpressionSerialization.csproj
-		SccProjectName2 = ExpressionSerialization
-		SccLocalPath2 = ExpressionSerialization
-		SccProjectUniqueName3 = SilverlightTest1\\SilverlightTest1.csproj
-		SccProjectName3 = SilverlightTest1
-		SccLocalPath3 = SilverlightTest1
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
 		Debug|Any CPU = Debug|Any CPU
