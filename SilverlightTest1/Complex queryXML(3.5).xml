@@ -1,0 +1,211 @@
+﻿<LambdaExpression NodeType="Lambda">
+  <Body>
+    <MethodCallExpression NodeType="Call">
+      <Method MemberType="Method" MethodName="Select">
+        <DeclaringType>
+          <Type Name="System.Linq.Enumerable" />
+        </DeclaringType>
+        <Parameters>
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="System.Int32" />
+            </Type>
+          </Type>
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="System.Int32" />
+              <Type Name="System.Int32" />
+            </Type>
+          </Type>
+        </Parameters>
+        <GenericArgTypes>
+          <Type>
+            <Type Name="System.Int32" />
+          </Type>
+          <Type>
+            <Type Name="System.Int32" />
+          </Type>
+        </GenericArgTypes>
+      </Method>
+      <Object />
+      <Arguments>
+        <MethodCallExpression NodeType="Call">
+          <Method MemberType="Method" MethodName="Where">
+            <DeclaringType>
+              <Type Name="System.Linq.Enumerable" />
+            </DeclaringType>
+            <Parameters>
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="System.Int32" />
+                </Type>
+              </Type>
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="System.Int32" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+            </Parameters>
+            <GenericArgTypes>
+              <Type>
+                <Type Name="System.Int32" />
+              </Type>
+            </GenericArgTypes>
+          </Method>
+          <Object />
+          <Arguments>
+            <MethodCallExpression NodeType="Call">
+              <Method MemberType="Method" MethodName="Range">
+                <DeclaringType>
+                  <Type Name="System.Linq.Enumerable" />
+                </DeclaringType>
+                <Parameters>
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                </Parameters>
+                <GenericArgTypes />
+              </Method>
+              <Object />
+              <Arguments>
+                <ConstantExpression NodeType="Constant">
+                  <Value>1</Value>
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                </ConstantExpression>
+                <ConstantExpression NodeType="Constant">
+                  <Value>10</Value>
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                </ConstantExpression>
+              </Arguments>
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="System.Int32" />
+                </Type>
+              </Type>
+            </MethodCallExpression>
+            <LambdaExpression NodeType="Lambda">
+              <Body>
+                <BinaryExpression IsLifted="false" IsLiftedToNull="false" NodeType="Equal">
+                  <Left>
+                    <BinaryExpression IsLifted="false" IsLiftedToNull="false" NodeType="Modulo">
+                      <Left>
+                        <ParameterExpression Name="i" NodeType="Parameter">
+                          <Type>
+                            <Type Name="System.Int32" />
+                          </Type>
+                        </ParameterExpression>
+                      </Left>
+                      <Right>
+                        <ConstantExpression NodeType="Constant">
+                          <Value>2</Value>
+                          <Type>
+                            <Type Name="System.Int32" />
+                          </Type>
+                        </ConstantExpression>
+                      </Right>
+                      <Method />
+                      <Conversion />
+                      <Type>
+                        <Type Name="System.Int32" />
+                      </Type>
+                    </BinaryExpression>
+                  </Left>
+                  <Right>
+                    <ConstantExpression NodeType="Constant">
+                      <Value>0</Value>
+                      <Type>
+                        <Type Name="System.Int32" />
+                      </Type>
+                    </ConstantExpression>
+                  </Right>
+                  <Method />
+                  <Conversion />
+                  <Type>
+                    <Type Name="System.Boolean" />
+                  </Type>
+                </BinaryExpression>
+              </Body>
+              <Parameters>
+                <ParameterExpression Name="i" NodeType="Parameter">
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                </ParameterExpression>
+              </Parameters>
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="System.Int32" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+            </LambdaExpression>
+          </Arguments>
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="System.Int32" />
+            </Type>
+          </Type>
+        </MethodCallExpression>
+        <LambdaExpression NodeType="Lambda">
+          <Body>
+            <BinaryExpression IsLifted="false" IsLiftedToNull="false" NodeType="Multiply">
+              <Left>
+                <ParameterExpression Name="i" NodeType="Parameter">
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                </ParameterExpression>
+              </Left>
+              <Right>
+                <ParameterExpression Name="i" NodeType="Parameter">
+                  <Type>
+                    <Type Name="System.Int32" />
+                  </Type>
+                </ParameterExpression>
+              </Right>
+              <Method />
+              <Conversion />
+              <Type>
+                <Type Name="System.Int32" />
+              </Type>
+            </BinaryExpression>
+          </Body>
+          <Parameters>
+            <ParameterExpression Name="i" NodeType="Parameter">
+              <Type>
+                <Type Name="System.Int32" />
+              </Type>
+            </ParameterExpression>
+          </Parameters>
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="System.Int32" />
+              <Type Name="System.Int32" />
+            </Type>
+          </Type>
+        </LambdaExpression>
+      </Arguments>
+      <Type>
+        <Type Name="System.Collections.Generic.IEnumerable`1">
+          <Type Name="System.Int32" />
+        </Type>
+      </Type>
+    </MethodCallExpression>
+  </Body>
+  <Parameters />
+  <Type>
+    <Type Name="System.Func`1">
+      <Type Name="System.Collections.Generic.IEnumerable`1">
+        <Type Name="System.Int32" />
+      </Type>
+    </Type>
+  </Type>
+</LambdaExpression>

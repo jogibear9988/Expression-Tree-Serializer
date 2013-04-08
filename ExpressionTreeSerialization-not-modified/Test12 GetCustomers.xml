@@ -1,0 +1,208 @@
+﻿<LambdaExpression NodeType="Lambda">
+  <Body>
+    <MethodCallExpression NodeType="Call">
+      <Method MemberType="Method" MethodName="Select">
+        <DeclaringType>
+          <Type Name="System.Linq.Enumerable" />
+        </DeclaringType>
+        <Parameters>
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="TestHarness.UnitTests+Customer" />
+            </Type>
+          </Type>
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="TestHarness.UnitTests+Customer" />
+              <Type Name="TestHarness.UnitTests+Order[]" />
+            </Type>
+          </Type>
+        </Parameters>
+        <GenericArgTypes>
+          <Type>
+            <Type Name="TestHarness.UnitTests+Customer" />
+          </Type>
+          <Type>
+            <Type Name="TestHarness.UnitTests+Order[]" />
+          </Type>
+        </GenericArgTypes>
+      </Method>
+      <Object />
+      <Arguments>
+        <MethodCallExpression NodeType="Call">
+          <Method MemberType="Method" MethodName="Where">
+            <DeclaringType>
+              <Type Name="System.Linq.Enumerable" />
+            </DeclaringType>
+            <Parameters>
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="TestHarness.UnitTests+Customer" />
+                </Type>
+              </Type>
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="TestHarness.UnitTests+Customer" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+            </Parameters>
+            <GenericArgTypes>
+              <Type>
+                <Type Name="TestHarness.UnitTests+Customer" />
+              </Type>
+            </GenericArgTypes>
+          </Method>
+          <Object />
+          <Arguments>
+            <MethodCallExpression NodeType="Call">
+              <Method MemberType="Method" MethodName="GetCustomers">
+                <DeclaringType>
+                  <Type Name="TestHarness.UnitTests" />
+                </DeclaringType>
+                <Parameters />
+                <GenericArgTypes />
+              </Method>
+              <Object />
+              <Arguments />
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="TestHarness.UnitTests+Customer" />
+                </Type>
+              </Type>
+            </MethodCallExpression>
+            <LambdaExpression NodeType="Lambda">
+              <Body>
+                <BinaryExpression IsLifted="false" IsLiftedToNull="false" NodeType="LessThan">
+                  <Left>
+                    <MemberExpression NodeType="MemberAccess">
+                      <Expression>
+                        <ParameterExpression Name="c" NodeType="Parameter">
+                          <Type>
+                            <Type Name="TestHarness.UnitTests+Customer" />
+                          </Type>
+                        </ParameterExpression>
+                      </Expression>
+                      <Member MemberType="Field" FieldName="ID">
+                        <DeclaringType>
+                          <Type Name="TestHarness.UnitTests+Customer" />
+                        </DeclaringType>
+                      </Member>
+                      <Type>
+                        <Type Name="System.Int32" />
+                      </Type>
+                    </MemberExpression>
+                  </Left>
+                  <Right>
+                    <ParameterExpression Name="n" NodeType="Parameter">
+                      <Type>
+                        <Type Name="System.Int32" />
+                      </Type>
+                    </ParameterExpression>
+                  </Right>
+                  <Method />
+                  <Conversion />
+                  <Type>
+                    <Type Name="System.Boolean" />
+                  </Type>
+                </BinaryExpression>
+              </Body>
+              <Parameters>
+                <ParameterExpression Name="c" NodeType="Parameter">
+                  <Type>
+                    <Type Name="TestHarness.UnitTests+Customer" />
+                  </Type>
+                </ParameterExpression>
+              </Parameters>
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="TestHarness.UnitTests+Customer" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+            </LambdaExpression>
+          </Arguments>
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="TestHarness.UnitTests+Customer" />
+            </Type>
+          </Type>
+        </MethodCallExpression>
+        <LambdaExpression NodeType="Lambda">
+          <Body>
+            <MethodCallExpression NodeType="Call">
+              <Method MemberType="Method" MethodName="ToArray">
+                <DeclaringType>
+                  <Type Name="System.Collections.Generic.List`1">
+                    <Type Name="TestHarness.UnitTests+Order" />
+                  </Type>
+                </DeclaringType>
+                <Parameters />
+                <GenericArgTypes />
+              </Method>
+              <Object>
+                <MemberExpression NodeType="MemberAccess">
+                  <Expression>
+                    <ParameterExpression Name="c" NodeType="Parameter">
+                      <Type>
+                        <Type Name="TestHarness.UnitTests+Customer" />
+                      </Type>
+                    </ParameterExpression>
+                  </Expression>
+                  <Member MemberType="Property" PropertyName="Orders">
+                    <DeclaringType>
+                      <Type Name="TestHarness.UnitTests+Customer" />
+                    </DeclaringType>
+                    <IndexParameters />
+                  </Member>
+                  <Type>
+                    <Type Name="System.Collections.Generic.List`1">
+                      <Type Name="TestHarness.UnitTests+Order" />
+                    </Type>
+                  </Type>
+                </MemberExpression>
+              </Object>
+              <Arguments />
+              <Type>
+                <Type Name="TestHarness.UnitTests+Order[]" />
+              </Type>
+            </MethodCallExpression>
+          </Body>
+          <Parameters>
+            <ParameterExpression Name="c" NodeType="Parameter">
+              <Type>
+                <Type Name="TestHarness.UnitTests+Customer" />
+              </Type>
+            </ParameterExpression>
+          </Parameters>
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="TestHarness.UnitTests+Customer" />
+              <Type Name="TestHarness.UnitTests+Order[]" />
+            </Type>
+          </Type>
+        </LambdaExpression>
+      </Arguments>
+      <Type>
+        <Type Name="System.Collections.Generic.IEnumerable`1">
+          <Type Name="TestHarness.UnitTests+Order[]" />
+        </Type>
+      </Type>
+    </MethodCallExpression>
+  </Body>
+  <Parameters>
+    <ParameterExpression Name="n" NodeType="Parameter">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </ParameterExpression>
+  </Parameters>
+  <Type>
+    <Type Name="System.Func`2">
+      <Type Name="System.Int32" />
+      <Type Name="System.Collections.Generic.IEnumerable`1">
+        <Type Name="TestHarness.UnitTests+Order[]" />
+      </Type>
+    </Type>
+  </Type>
+</LambdaExpression>

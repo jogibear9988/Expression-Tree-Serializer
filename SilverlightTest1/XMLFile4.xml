@@ -1,0 +1,243 @@
+﻿<LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+  <Type>
+    <Type Name="System.Func`2">
+      <Type Name="System.Int32" />
+      <Type Name="System.Collections.Generic.IEnumerable`1">
+        <Type Name="Northwind.Order[]" />
+      </Type>
+    </Type>
+  </Type>
+  <Parameters>
+    <ParameterExpression NodeType="Parameter" Name="n" IsByRef="false" CanReduce="false">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </ParameterExpression>
+  </Parameters>
+  <Body>
+    <MethodCallExpression NodeType="Call" CanReduce="false">
+      <Type>
+        <Type Name="System.Collections.Generic.IEnumerable`1">
+          <Type Name="Northwind.Order[]" />
+        </Type>
+      </Type>
+      <Method MemberType="Method" MethodName="Select">
+        <DeclaringType>
+          <Type Name="System.Linq.Enumerable" />
+        </DeclaringType>
+        <Parameters>
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="Northwind.Customer" />
+            </Type>
+          </Type>
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="Northwind.Customer" />
+              <Type Name="Northwind.Order[]" />
+            </Type>
+          </Type>
+        </Parameters>
+        <GenericArgTypes>
+          <Type>
+            <Type Name="Northwind.Customer" />
+          </Type>
+          <Type>
+            <Type Name="Northwind.Order[]" />
+          </Type>
+        </GenericArgTypes>
+      </Method>
+      <Object />
+      <Arguments>
+        <MethodCallExpression NodeType="Call" CanReduce="false">
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="Northwind.Customer" />
+            </Type>
+          </Type>
+          <Method MemberType="Method" MethodName="Where">
+            <DeclaringType>
+              <Type Name="System.Linq.Enumerable" />
+            </DeclaringType>
+            <Parameters>
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="Northwind.Customer" />
+                </Type>
+              </Type>
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="Northwind.Customer" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+            </Parameters>
+            <GenericArgTypes>
+              <Type>
+                <Type Name="Northwind.Customer" />
+              </Type>
+            </GenericArgTypes>
+          </Method>
+          <Object />
+          <Arguments>
+            <TypedConstantExpression NodeType="Constant" CanReduce="false">
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="Northwind.Customer" />
+                </Type>
+              </Type>
+              <Value>
+                &lt;ArrayOfCustomer xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Northwind"&gt;&lt;Customer&gt;&lt;Address i:nil="true" /&gt;&lt;City&gt;Cambridge&lt;/City&gt;&lt;Code i:nil="true" /&gt;&lt;ContactName i:nil="true" /&gt;&lt;ContactTitle i:nil="true" /&gt;&lt;Country&gt;UK&lt;/Country&gt;&lt;Fax i:nil="true" /&gt;&lt;ID&gt;200&lt;/ID&gt;&lt;Name&gt;Hans Passant&lt;/Name&gt;&lt;Orders i:nil="true" /&gt;&lt;PermissionType i:nil="true" /&gt;&lt;Phone i:nil="true" /&gt;&lt;PostalCode i:nil="true" /&gt;&lt;Region i:nil="true" /&gt;&lt;RowTimeStamps xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;SecureName xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:SecurityHandle&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/d3p1:SecurityHandle&gt;&lt;d3p1:Value i:nil="true" /&gt;&lt;/SecureName&gt;&lt;SecurityHandle xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/SecurityHandle&gt;&lt;/Customer&gt;&lt;Customer&gt;&lt;Address i:nil="true" /&gt;&lt;City&gt;Seattle&lt;/City&gt;&lt;Code i:nil="true" /&gt;&lt;ContactName i:nil="true" /&gt;&lt;ContactTitle i:nil="true" /&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Fax i:nil="true" /&gt;&lt;ID&gt;11&lt;/ID&gt;&lt;Name&gt;Marc Gravell&lt;/Name&gt;&lt;Orders i:nil="true" /&gt;&lt;PermissionType i:nil="true" /&gt;&lt;Phone i:nil="true" /&gt;&lt;PostalCode i:nil="true" /&gt;&lt;Region i:nil="true" /&gt;&lt;RowTimeStamps xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;SecureName xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:SecurityHandle&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/d3p1:SecurityHandle&gt;&lt;d3p1:Value i:nil="true" /&gt;&lt;/SecureName&gt;&lt;SecurityHandle xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/SecurityHandle&gt;&lt;/Customer&gt;&lt;Customer&gt;&lt;Address i:nil="true" /&gt;&lt;City i:nil="true" /&gt;&lt;Code i:nil="true" /&gt;&lt;ContactName i:nil="true" /&gt;&lt;ContactTitle i:nil="true" /&gt;&lt;Country i:nil="true" /&gt;&lt;Fax i:nil="true" /&gt;&lt;ID&gt;-111&lt;/ID&gt;&lt;Name&gt;Bob&lt;/Name&gt;&lt;Orders&gt;&lt;Order&gt;&lt;Customer i:nil="true" /&gt;&lt;CustomerId i:nil="true" /&gt;&lt;Employee i:nil="true" /&gt;&lt;EmployeeID i:nil="true" /&gt;&lt;Freight&gt;5&lt;/Freight&gt;&lt;ID&gt;0&lt;/ID&gt;&lt;OrderDate i:nil="true" /&gt;&lt;RequiredDate i:nil="true" /&gt;&lt;RowTimeStamp xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;ShipAddress&gt;address 0&lt;/ShipAddress&gt;&lt;ShipCity i:nil="true" /&gt;&lt;ShipCountry i:nil="true" /&gt;&lt;ShipName i:nil="true" /&gt;&lt;ShipPostalCode i:nil="true" /&gt;&lt;ShipRegion i:nil="true" /&gt;&lt;ShippedDate i:nil="true" /&gt;&lt;Shipper i:nil="true" /&gt;&lt;ShipperId i:nil="true" /&gt;&lt;/Order&gt;&lt;Order&gt;&lt;Customer i:nil="true" /&gt;&lt;CustomerId i:nil="true" /&gt;&lt;Employee i:nil="true" /&gt;&lt;EmployeeID i:nil="true" /&gt;&lt;Freight&gt;123&lt;/Freight&gt;&lt;ID&gt;0&lt;/ID&gt;&lt;OrderDate i:nil="true" /&gt;&lt;RequiredDate i:nil="true" /&gt;&lt;RowTimeStamp xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;ShipAddress&gt;address 1&lt;/ShipAddress&gt;&lt;ShipCity i:nil="true" /&gt;&lt;ShipCountry i:nil="true" /&gt;&lt;ShipName i:nil="true" /&gt;&lt;ShipPostalCode i:nil="true" /&gt;&lt;ShipRegion i:nil="true" /&gt;&lt;ShippedDate i:nil="true" /&gt;&lt;Shipper i:nil="true" /&gt;&lt;ShipperId i:nil="true" /&gt;&lt;/Order&gt;&lt;/Orders&gt;&lt;PermissionType i:nil="true" /&gt;&lt;Phone i:nil="true" /&gt;&lt;PostalCode i:nil="true" /&gt;&lt;Region i:nil="true" /&gt;&lt;RowTimeStamps xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;SecureName xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:SecurityHandle&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/d3p1:SecurityHandle&gt;&lt;d3p1:Value i:nil="true" /&gt;&lt;/SecureName&gt;&lt;SecurityHandle xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/SecurityHandle&gt;&lt;/Customer&gt;&lt;Customer&gt;&lt;Address i:nil="true" /&gt;&lt;City i:nil="true" /&gt;&lt;Code i:nil="true" /&gt;&lt;ContactName i:nil="true" /&gt;&lt;ContactTitle i:nil="true" /&gt;&lt;Country i:nil="true" /&gt;&lt;Fax i:nil="true" /&gt;&lt;ID&gt;222&lt;/ID&gt;&lt;Name&gt;Dave&lt;/Name&gt;&lt;Orders&gt;&lt;Order&gt;&lt;Customer i:nil="true" /&gt;&lt;CustomerId i:nil="true" /&gt;&lt;Employee i:nil="true" /&gt;&lt;EmployeeID i:nil="true" /&gt;&lt;Freight&gt;5&lt;/Freight&gt;&lt;ID&gt;0&lt;/ID&gt;&lt;OrderDate i:nil="true" /&gt;&lt;RequiredDate i:nil="true" /&gt;&lt;RowTimeStamp xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;ShipAddress&gt;city 0&lt;/ShipAddress&gt;&lt;ShipCity i:nil="true" /&gt;&lt;ShipCountry i:nil="true" /&gt;&lt;ShipName i:nil="true" /&gt;&lt;ShipPostalCode i:nil="true" /&gt;&lt;ShipRegion i:nil="true" /&gt;&lt;ShippedDate i:nil="true" /&gt;&lt;Shipper i:nil="true" /&gt;&lt;ShipperId i:nil="true" /&gt;&lt;/Order&gt;&lt;Order&gt;&lt;Customer i:nil="true" /&gt;&lt;CustomerId i:nil="true" /&gt;&lt;Employee i:nil="true" /&gt;&lt;EmployeeID i:nil="true" /&gt;&lt;Freight&gt;199&lt;/Freight&gt;&lt;ID&gt;0&lt;/ID&gt;&lt;OrderDate i:nil="true" /&gt;&lt;RequiredDate i:nil="true" /&gt;&lt;RowTimeStamp xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;ShipAddress&gt;place 2&lt;/ShipAddress&gt;&lt;ShipCity i:nil="true" /&gt;&lt;ShipCountry i:nil="true" /&gt;&lt;ShipName i:nil="true" /&gt;&lt;ShipPostalCode i:nil="true" /&gt;&lt;ShipRegion i:nil="true" /&gt;&lt;ShippedDate i:nil="true" /&gt;&lt;Shipper i:nil="true" /&gt;&lt;ShipperId i:nil="true" /&gt;&lt;/Order&gt;&lt;/Orders&gt;&lt;PermissionType i:nil="true" /&gt;&lt;Phone i:nil="true" /&gt;&lt;PostalCode i:nil="true" /&gt;&lt;Region i:nil="true" /&gt;&lt;RowTimeStamps xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;SecureName xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:SecurityHandle&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/d3p1:SecurityHandle&gt;&lt;d3p1:Value i:nil="true" /&gt;&lt;/SecureName&gt;&lt;SecurityHandle xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/SecurityHandle&gt;&lt;/Customer&gt;&lt;Customer&gt;&lt;Address i:nil="true" /&gt;&lt;City i:nil="true" /&gt;&lt;Code i:nil="true" /&gt;&lt;ContactName i:nil="true" /&gt;&lt;ContactTitle i:nil="true" /&gt;&lt;Country i:nil="true" /&gt;&lt;Fax i:nil="true" /&gt;&lt;ID&gt;-3333&lt;/ID&gt;&lt;Name&gt;Abigail&lt;/Name&gt;&lt;Orders&gt;&lt;Order&gt;&lt;Customer i:nil="true" /&gt;&lt;CustomerId i:nil="true" /&gt;&lt;Employee i:nil="true" /&gt;&lt;EmployeeID i:nil="true" /&gt;&lt;Freight&gt;5&lt;/Freight&gt;&lt;ID&gt;0&lt;/ID&gt;&lt;OrderDate i:nil="true" /&gt;&lt;RequiredDate i:nil="true" /&gt;&lt;RowTimeStamp xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;ShipAddress&gt;town 0&lt;/ShipAddress&gt;&lt;ShipCity i:nil="true" /&gt;&lt;ShipCountry i:nil="true" /&gt;&lt;ShipName i:nil="true" /&gt;&lt;ShipPostalCode i:nil="true" /&gt;&lt;ShipRegion i:nil="true" /&gt;&lt;ShippedDate i:nil="true" /&gt;&lt;Shipper i:nil="true" /&gt;&lt;ShipperId i:nil="true" /&gt;&lt;/Order&gt;&lt;Order&gt;&lt;Customer i:nil="true" /&gt;&lt;CustomerId i:nil="true" /&gt;&lt;Employee i:nil="true" /&gt;&lt;EmployeeID i:nil="true" /&gt;&lt;Freight&gt;199&lt;/Freight&gt;&lt;ID&gt;0&lt;/ID&gt;&lt;OrderDate i:nil="true" /&gt;&lt;RequiredDate i:nil="true" /&gt;&lt;RowTimeStamp xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;ShipAddress&gt;place 44&lt;/ShipAddress&gt;&lt;ShipCity i:nil="true" /&gt;&lt;ShipCountry i:nil="true" /&gt;&lt;ShipName i:nil="true" /&gt;&lt;ShipPostalCode i:nil="true" /&gt;&lt;ShipRegion i:nil="true" /&gt;&lt;ShippedDate i:nil="true" /&gt;&lt;Shipper i:nil="true" /&gt;&lt;ShipperId i:nil="true" /&gt;&lt;/Order&gt;&lt;/Orders&gt;&lt;PermissionType i:nil="true" /&gt;&lt;Phone i:nil="true" /&gt;&lt;PostalCode i:nil="true" /&gt;&lt;Region i:nil="true" /&gt;&lt;RowTimeStamps xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;SecureName xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:SecurityHandle&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/d3p1:SecurityHandle&gt;&lt;d3p1:Value i:nil="true" /&gt;&lt;/SecureName&gt;&lt;SecurityHandle xmlns:d3p1="http://schemas.datacontract.org/2004/07/Northwind.SL.Security"&gt;&lt;d3p1:Domain i:nil="true" /&gt;&lt;/SecurityHandle&gt;&lt;/Customer&gt;&lt;/ArrayOfCustomer&gt;
+              </Value>
+            </TypedConstantExpression>
+            <LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="Northwind.Customer" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+              <Parameters>
+                <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+                  <Type>
+                    <Type Name="Northwind.Customer" />
+                  </Type>
+                </ParameterExpression>
+              </Parameters>
+              <Body>
+                <BinaryExpression CanReduce="false" IsLifted="true" IsLiftedToNull="false" NodeType="LessThan">
+                  <Right>
+                    <UnaryExpression NodeType="Convert" IsLifted="true" IsLiftedToNull="true" CanReduce="false">
+                      <Type>
+                        <Type Name="System.Nullable`1">
+                          <Type Name="System.Int32" />
+                        </Type>
+                      </Type>
+                      <Operand>
+                        <ParameterExpression NodeType="Parameter" Name="n" IsByRef="false" CanReduce="false">
+                          <Type>
+                            <Type Name="System.Int32" />
+                          </Type>
+                        </ParameterExpression>
+                      </Operand>
+                      <Method />
+                    </UnaryExpression>
+                  </Right>
+                  <Left>
+                    <PropertyExpression NodeType="MemberAccess" CanReduce="false">
+                      <Member MemberType="Property" PropertyName="ID">
+                        <DeclaringType>
+                          <Type Name="Northwind.Customer" />
+                        </DeclaringType>
+                        <IndexParameters />
+                      </Member>
+                      <Expression>
+                        <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+                          <Type>
+                            <Type Name="Northwind.Customer" />
+                          </Type>
+                        </ParameterExpression>
+                      </Expression>
+                      <Type>
+                        <Type Name="System.Nullable`1">
+                          <Type Name="System.Int32" />
+                        </Type>
+                      </Type>
+                    </PropertyExpression>
+                  </Left>
+                  <Method />
+                  <Conversion />
+                  <Type>
+                    <Type Name="System.Boolean" />
+                  </Type>
+                </BinaryExpression>
+              </Body>
+              <ReturnType>
+                <Type Name="System.Boolean" />
+              </ReturnType>
+            </LambdaExpression>
+          </Arguments>
+        </MethodCallExpression>
+        <LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="Northwind.Customer" />
+              <Type Name="Northwind.Order[]" />
+            </Type>
+          </Type>
+          <Parameters>
+            <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+              <Type>
+                <Type Name="Northwind.Customer" />
+              </Type>
+            </ParameterExpression>
+          </Parameters>
+          <Body>
+            <MethodCallExpression NodeType="Call" CanReduce="false">
+              <Type>
+                <Type Name="Northwind.Order[]" />
+              </Type>
+              <Method MemberType="Method" MethodName="ToArray">
+                <DeclaringType>
+                  <Type Name="System.Collections.Generic.List`1">
+                    <Type Name="Northwind.Order" />
+                  </Type>
+                </DeclaringType>
+                <Parameters />
+                <GenericArgTypes />
+              </Method>
+              <Object>
+                <PropertyExpression NodeType="MemberAccess" CanReduce="false">
+                  <Member MemberType="Property" PropertyName="Orders">
+                    <DeclaringType>
+                      <Type Name="Northwind.Customer" />
+                    </DeclaringType>
+                    <IndexParameters />
+                  </Member>
+                  <Expression>
+                    <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+                      <Type>
+                        <Type Name="Northwind.Customer" />
+                      </Type>
+                    </ParameterExpression>
+                  </Expression>
+                  <Type>
+                    <Type Name="System.Collections.Generic.List`1">
+                      <Type Name="Northwind.Order" />
+                    </Type>
+                  </Type>
+                </PropertyExpression>
+              </Object>
+              <Arguments />
+            </MethodCallExpression>
+          </Body>
+          <ReturnType>
+            <Type Name="Northwind.Order[]" />
+          </ReturnType>
+        </LambdaExpression>
+      </Arguments>
+    </MethodCallExpression>
+  </Body>
+  <ReturnType>
+    <Type Name="System.Collections.Generic.IEnumerable`1">
+      <Type Name="Northwind.Order[]" />
+    </Type>
+  </ReturnType>
+</LambdaExpression>
+<!-- ......................... -->
+
+<!-- Silverlight-->
+<ConstantExpression NodeType="Constant" CanReduce="false">
+  <Type>
+    <Type Name="SilverlightTest1.Tests2+&lt;&gt;c__DisplayClass1" />
+  </Type>
+  <Value>SilverlightTest1.Tests2+&lt;&gt;c__DisplayClass1</Value>
+</ConstantExpression>
+
+<!--.NET 3.5-->
+<ConstantExpression NodeType="Constant">
+  <Value>TestHarness.UnitTests+&lt;&gt;c__DisplayClassd</Value>
+  <Type>
+    <Type Name="TestHarness.UnitTests+&lt;&gt;c__DisplayClassd" />
+  </Type>
+</ConstantExpression>

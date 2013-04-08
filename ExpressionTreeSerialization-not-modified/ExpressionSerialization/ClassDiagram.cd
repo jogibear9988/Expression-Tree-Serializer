@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Comment CommentText="LINQ to SQL Serialization">
+    <Position X="3.25" Y="5.75" Height="0.365" Width="1.721" />
+  </Comment>
+  <Comment CommentText="Expression Serialization">
+    <Position X="3.306" Y="0.5" Height="0.365" Width="1.721" />
+  </Comment>
+  <Class Name="ExpressionSerialization.CustomExpressionXmlConverter">
+    <Position X="4.75" Y="4" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExpressionSerializationTypeResolver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpressionSerialization.ExpressionSerializationTypeResolver">
+    <Position X="4.75" Y="1.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Protected" Collapsed="true" />
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ExpressionSerialization.ExpressionSerializationTypeResolver.NameTypePair" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ExpressionSerializationTypeResolver.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ExpressionSerialization.ExpressionSerializationTypeResolver.AnonTypeId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ExpressionSerializationTypeResolver.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAQAIAAACAAAAAACBAAAAAIAAAEAEAIAAAAAAAAAA=</HashCode>
+      <FileName>ExpressionSerializationTypeResolver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpressionSerialization.ExpressionSerializer">
+    <Position X="0.5" Y="2.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Converters" Type="ExpressionSerialization.CustomExpressionXmlConverter">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.06" Y="0.11" Height="0.182" Width="0.992" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gyChAAUCYiRYkEADAEBIhAKBADRiAAQxRQNpACGAAgY=</HashCode>
+      <FileName>ExpressionSerializer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="resolver" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Converters" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ExpressionSerialization.DLinqSerializer">
+    <Position X="1.25" Y="6.5" Width="3" />
+    <NestedTypes>
+      <Class Name="ExpressionSerialization.DLinqSerializer.DLinqSerializationTypeResolver" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DLinqSerializer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="ExpressionSerialization.DLinqSerializer.DLinqCustomExpressionXmlConverter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DLinqSerializer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>DLinqSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ExpressionSerialization.IQueryService">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

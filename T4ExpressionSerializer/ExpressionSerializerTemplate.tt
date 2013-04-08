@@ -1,0 +1,93 @@
+﻿<#@ output extension=".cs" #>
+<#@ template language="C#" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Linq.Expressions" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ Import Namespace="ExpressionSerialization" #>
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Xml.Linq;
+
+namespace ExpressionSerialization
+{
+	//GenerateXmlFromExpressionCore
+	public partial class ExpressionSerializer
+    {
+        
+		public XElement GenerateXmlFromExpressionCore(Expression e)
+        {
+			XElement replace;            
+			if (TryCustomSerializers(e, out replace))
+				return replace;            			
+			<#
+    foreach (Type expressionType in this.GetExpressionTypes())
+    {
+        string name = expressionType.Name; //expressionType.ToGenericTypeFullNameString();
+#>			
+			else if (e is <#=name #> )
+			{
+				return <#= name #>ToXElement((<#= name #>)e);
+			}
+<#
+    }
+#>
+		else 
+            return null;            			
+        }//end GenerateXmlFromExpressionCore
+
+
+			<#
+    foreach (Type expressionType in this.GetExpressionTypes())
+    {
+        PropertyInfo[] propertyInfos = expressionType.GetProperties();
+        #>
+		internal XElement <#= expressionType.Name #>ToXElement(<#=    expressionType.Name #> e)
+		{
+			object value;
+			string xName = "<#=    expressionType.Name #>";
+			object[] XElementValues = new object[<#=    propertyInfos.Length #>];
+<#
+    for (int i = 0; i < propertyInfos.Length; i++)
+    {
+        PropertyInfo p = propertyInfos[i];
+#>
+			value = ((<#=expressionType.Name #>)e).<#=p.Name  #>;
+			XElementValues[<#= i #>] = GenerateXmlFromProperty(typeof(<#= TypeResolver.ToGenericTypeFullNameString(p.PropertyType) #>), 
+				"<#= p.Name #>", value ?? string.Empty);
+<#
+    }
+#>
+			return new XElement(xName, XElementValues);
+		}//end static method
+		<#
+    }
+#>
+
+
+	}//end ExpressionSerializer class
+}
+
+<#+
+	
+    Assembly core = typeof(Expression).Assembly;
+    
+    public IEnumerable<Type> GetExpressionTypes()
+    {
+        IEnumerable<Type> expressionTypes = from et in core.GetTypes()
+                                            where et.IsSubclassOf(typeof(Expression))
+                                            && !et.IsGenericTypeDefinition
+                                            && et.IsPublic
+                                            select et;
+        return expressionTypes;
+    }
+    
+#>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+  <Type>
+    <Type Name="System.Func`3">
+      <Type Name="System.Int32" />
+      <Type Name="System.Int32" />
+      <Type Name="System.Int32" />
+    </Type>
+  </Type>
+  <Parameters>
+    <Int32 NodeType="Parameter" Name="x" IsByRef="false" CanReduce="false">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </Int32>
+    <Int32 NodeType="Parameter" Name="y" IsByRef="false" CanReduce="false">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </Int32>
+  </Parameters>
+  <Body>
+    <SimpleBinaryExpression NodeType="Add" CanReduce="false" IsLifted="false" IsLiftedToNull="false">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+      <Right>
+        <Int32 NodeType="Parameter" Name="y" IsByRef="false" CanReduce="false">
+          <Type>
+            <Type Name="System.Int32" />
+          </Type>
+        </Int32>
+      </Right>
+      <Left>
+        <Int32 NodeType="Parameter" Name="x" IsByRef="false" CanReduce="false">
+          <Type>
+            <Type Name="System.Int32" />
+          </Type>
+        </Int32>
+      </Left>
+      <Method />
+      <Conversion />
+    </SimpleBinaryExpression>
+  </Body>
+  <ReturnType>
+    <Type Name="System.Int32" />
+  </ReturnType>
+</LambdaExpression>

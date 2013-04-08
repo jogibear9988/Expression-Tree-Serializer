@@ -1,0 +1,224 @@
+﻿<LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+  <Type>
+    <Type Name="System.Func`2">
+      <Type Name="System.Int32" />
+      <Type Name="System.Collections.Generic.IEnumerable`1">
+        <Type Name="Northwind.Order[]" />
+      </Type>
+    </Type>
+  </Type>
+  <Parameters>
+    <ParameterExpression NodeType="Parameter" Name="n" IsByRef="false" CanReduce="false">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </ParameterExpression>
+  </Parameters>
+  <Body>
+    <MethodCallExpression NodeType="Call" CanReduce="false">
+      <Type>
+        <Type Name="System.Collections.Generic.IEnumerable`1">
+          <Type Name="Northwind.Order[]" />
+        </Type>
+      </Type>
+      <Method MemberType="Method" MethodName="Select">
+        <DeclaringType>
+          <Type Name="System.Linq.Enumerable" />
+        </DeclaringType>
+        <Parameters>
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="Northwind.Customer" />
+            </Type>
+          </Type>
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="Northwind.Customer" />
+              <Type Name="Northwind.Order[]" />
+            </Type>
+          </Type>
+        </Parameters>
+        <GenericArgTypes>
+          <Type>
+            <Type Name="Northwind.Customer" />
+          </Type>
+          <Type>
+            <Type Name="Northwind.Order[]" />
+          </Type>
+        </GenericArgTypes>
+      </Method>
+      <Object />
+      <Arguments>
+        <MethodCallExpression NodeType="Call" CanReduce="false">
+          <Type>
+            <Type Name="System.Collections.Generic.IEnumerable`1">
+              <Type Name="Northwind.Customer" />
+            </Type>
+          </Type>
+          <Method MemberType="Method" MethodName="Where">
+            <DeclaringType>
+              <Type Name="System.Linq.Enumerable" />
+            </DeclaringType>
+            <Parameters>
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="Northwind.Customer" />
+                </Type>
+              </Type>
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="Northwind.Customer" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+            </Parameters>
+            <GenericArgTypes>
+              <Type>
+                <Type Name="Northwind.Customer" />
+              </Type>
+            </GenericArgTypes>
+          </Method>
+          <Object />
+          <Arguments>
+            <TypedConstantExpression NodeType="Constant" CanReduce="false">
+              <Type>
+                <Type Name="System.Collections.Generic.IEnumerable`1">
+                  <Type Name="Northwind.Customer" />
+                </Type>
+              </Type>
+              <Value>Northwind.Customer[]</Value>
+            </TypedConstantExpression>
+            <LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+              <Type>
+                <Type Name="System.Func`2">
+                  <Type Name="Northwind.Customer" />
+                  <Type Name="System.Boolean" />
+                </Type>
+              </Type>
+              <Parameters>
+                <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+                  <Type>
+                    <Type Name="Northwind.Customer" />
+                  </Type>
+                </ParameterExpression>
+              </Parameters>
+              <Body>
+                <BinaryExpression CanReduce="false" IsLifted="true" IsLiftedToNull="false" NodeType="LessThan">
+                  <Right>
+                    <UnaryExpression NodeType="Convert" IsLifted="true" IsLiftedToNull="true" CanReduce="false">
+                      <Type>
+                        <Type Name="System.Nullable`1">
+                          <Type Name="System.Int32" />
+                        </Type>
+                      </Type>
+                      <Operand>
+                        <ParameterExpression NodeType="Parameter" Name="n" IsByRef="false" CanReduce="false">
+                          <Type>
+                            <Type Name="System.Int32" />
+                          </Type>
+                        </ParameterExpression>
+                      </Operand>
+                      <Method />
+                    </UnaryExpression>
+                  </Right>
+                  <Left>
+                    <PropertyExpression NodeType="MemberAccess" CanReduce="false">
+                      <Member MemberType="Property" PropertyName="ID">
+                        <DeclaringType>
+                          <Type Name="Northwind.Customer" />
+                        </DeclaringType>
+                        <IndexParameters />
+                      </Member>
+                      <Expression>
+                        <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+                          <Type>
+                            <Type Name="Northwind.Customer" />
+                          </Type>
+                        </ParameterExpression>
+                      </Expression>
+                      <Type>
+                        <Type Name="System.Nullable`1">
+                          <Type Name="System.Int32" />
+                        </Type>
+                      </Type>
+                    </PropertyExpression>
+                  </Left>
+                  <Method />
+                  <Conversion />
+                  <Type>
+                    <Type Name="System.Boolean" />
+                  </Type>
+                </BinaryExpression>
+              </Body>
+              <ReturnType>
+                <Type Name="System.Boolean" />
+              </ReturnType>
+            </LambdaExpression>
+          </Arguments>
+        </MethodCallExpression>
+        <LambdaExpression NodeType="Lambda" Name="" TailCall="false" CanReduce="false">
+          <Type>
+            <Type Name="System.Func`2">
+              <Type Name="Northwind.Customer" />
+              <Type Name="Northwind.Order[]" />
+            </Type>
+          </Type>
+          <Parameters>
+            <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+              <Type>
+                <Type Name="Northwind.Customer" />
+              </Type>
+            </ParameterExpression>
+          </Parameters>
+          <Body>
+            <MethodCallExpression NodeType="Call" CanReduce="false">
+              <Type>
+                <Type Name="Northwind.Order[]" />
+              </Type>
+              <Method MemberType="Method" MethodName="ToArray">
+                <DeclaringType>
+                  <Type Name="System.Collections.Generic.List`1">
+                    <Type Name="Northwind.Order" />
+                  </Type>
+                </DeclaringType>
+                <Parameters />
+                <GenericArgTypes />
+              </Method>
+              <Object>
+                <PropertyExpression NodeType="MemberAccess" CanReduce="false">
+                  <Member MemberType="Property" PropertyName="Orders">
+                    <DeclaringType>
+                      <Type Name="Northwind.Customer" />
+                    </DeclaringType>
+                    <IndexParameters />
+                  </Member>
+                  <Expression>
+                    <ParameterExpression NodeType="Parameter" Name="c" IsByRef="false" CanReduce="false">
+                      <Type>
+                        <Type Name="Northwind.Customer" />
+                      </Type>
+                    </ParameterExpression>
+                  </Expression>
+                  <Type>
+                    <Type Name="System.Collections.Generic.List`1">
+                      <Type Name="Northwind.Order" />
+                    </Type>
+                  </Type>
+                </PropertyExpression>
+              </Object>
+              <Arguments />
+            </MethodCallExpression>
+          </Body>
+          <ReturnType>
+            <Type Name="Northwind.Order[]" />
+          </ReturnType>
+        </LambdaExpression>
+      </Arguments>
+    </MethodCallExpression>
+  </Body>
+  <ReturnType>
+    <Type Name="System.Collections.Generic.IEnumerable`1">
+      <Type Name="Northwind.Order[]" />
+    </Type>
+  </ReturnType>
+</LambdaExpression>

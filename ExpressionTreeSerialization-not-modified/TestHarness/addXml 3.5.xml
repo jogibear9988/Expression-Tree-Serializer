@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LambdaExpression NodeType="Lambda">
+  <Body>
+    <BinaryExpression IsLifted="false" IsLiftedToNull="false" NodeType="Add">
+      <Left>
+        <ParameterExpression Name="x" NodeType="Parameter">
+          <Type>
+            <Type Name="System.Int32" />
+          </Type>
+        </ParameterExpression>
+      </Left>
+      <Right>
+        <ParameterExpression Name="y" NodeType="Parameter">
+          <Type>
+            <Type Name="System.Int32" />
+          </Type>
+        </ParameterExpression>
+      </Right>
+      <Method />
+      <Conversion />
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </BinaryExpression>
+  </Body>
+  <Parameters>
+    <ParameterExpression Name="x" NodeType="Parameter">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </ParameterExpression>
+    <ParameterExpression Name="y" NodeType="Parameter">
+      <Type>
+        <Type Name="System.Int32" />
+      </Type>
+    </ParameterExpression>
+  </Parameters>
+  <Type>
+    <Type Name="System.Func`3">
+      <Type Name="System.Int32" />
+      <Type Name="System.Int32" />
+      <Type Name="System.Int32" />
+    </Type>
+  </Type>
+</LambdaExpression>
